@@ -1,0 +1,35 @@
+The employee file looks like:
+
+0;480;90,24;s1,s4,s0;r0-0
+1;480;48,56;s0,s1,s4;r0-0
+2;480;95,30;s3,s1,s4;r0-0
+3;480;95,11;s0,s1;r0-0
+
+Each line represents an employee. The properties of the employee are separated by a semicolon. The fields are:
+
+1. The identification of the employee;
+2. The duration of the shifts of the employee, in this dataset always 480 minutes;
+3. The coordinates (x,y) of the employee;
+4. The skills (separated by a comma) of the employee;
+5. The region of the employee. In the published research it has no meaning (and is always r0-0).
+
+===================================================================================================
+The task files look like:
+
+1;0;8;55;68,16;s5;r0-0
+2;0;5;35;7,29;s1;r0-0
+3;0;6;35;47,82;s9;r0-0
+4;0;10;35;69,91;s8;r0-0
+5;0;5;40;74,17;s2;r0-0
+6;0;5;50;23,3;s6;r0-0
+7;0;7;40;62,60;s2;r0-0
+
+Each line represents a task. The properties of the task are separated by a semicolon. The fields are:
+
+1. The identification of the task;
+2. The intake day of the task, the day it becomes available for scheduling on one of the next days;
+3. The (soft) deadline of the task;
+3. The duration of the task (in minutes, always multiple of 5);
+4. The coordinates (x,y) of the task;
+5. The required skill for this task;
+4. The region of the task. In the published research it has no meaning (and is always r0-0).
